@@ -63,21 +63,21 @@ sudo chown -R www-data: $final_path
 mysql -u $db_user -p$db_pwd $db_user < $final_path/install.mysql.sql
 
 
-sed -i "s@NAMETOCHANGE@opensondage@g" ../conf/php-fpm.conf
-finalphpconf=/etc/php5/fpm/pool.d/opensondage.conf
-sudo cp ../conf/php-fpm.conf $finalphpconf
-sudo chown root: $finalphpconf
-sudo chmod 644 $finalphpconf
+#sed -i "s@NAMETOCHANGE@opensondage@g" ../conf/php-fpm.conf
+#finalphpconf=/etc/php5/fpm/pool.d/opensondage.conf
+#sudo cp ../conf/php-fpm.conf $finalphpconf
+#sudo chown root: $finalphpconf
+#sudo chmod 644 $finalphpconf
 
-finalphpini=/etc/php5/fpm/conf.d/20-opensondage.ini
-sudo cp ../conf/php-fpm.ini $finalphpini
-sudo chown root: $finalphpini
-sudo chmod 644 $finalphpini
+#finalphpini=/etc/php5/fpm/conf.d/20-opensondage.ini
+#sudo cp ../conf/php-fpm.ini $finalphpini
+#sudo chown root: $finalphpini
+#sudo chmod 644 $finalphpini
 
 # Reload Nginx and regenerate SSOwat conf
-sudo service php5-fpm restart
+#sudo service php5-fpm restart
 
-sudo apt-get install php-fpdf
+#sudo apt-get install php-fpdf
 sudo yunohost app addaccess opensondage -u $admin
 
 # Modify Nginx configuration file and copy it to Nginx conf directory
