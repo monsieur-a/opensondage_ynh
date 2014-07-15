@@ -43,7 +43,7 @@
                 "name": "legal",
                 "ask": {
                     "en": "Indicate a web page with legal information",
-                    "fr": "Indiquez la page où figure les mentions légales"
+                    "fr": "Indiquez la page ou figure les mentions légales"
                 },
                 "example": "http://example.com",
                 "default": "./apropos.php"
