@@ -52,7 +52,7 @@
                 "name": "language",
                 "ask": {
                     "en": "Choose the default language of this OpenSondage",
-                    "fr": "Choisissez la langue par défault d'OpenSondage"
+                    "fr": "Choisissez la langue par default d'OpenSondage"
                 },
                 "choices": ["en_GB", "fr_FR","es_ES", "de_DE"],
                 "default": "en_GB"
@@ -61,7 +61,7 @@
                 "name": "public_site",
                 "ask": {
                     "en": "Could non member create poll ?",
-                    "fr": "Une personne non membre peut elle créer un sondage ?"
+                    "fr": "Une personne non membre peut elle creer un sondage ?"
                 },
                 "choices": ["Yes", "No"],
                 "default": "Yes"
